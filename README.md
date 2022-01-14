@@ -1,2 +1,2 @@
 # template
-c template project
+This project is a simple template of a c application with Makefile
