@@ -1,8 +1,12 @@
+FNAME=main
+
 CC=gcc
 CFLAGS=-g -Wall
-TARGET=main.exe
+TARGET=$(FNAME).exe
 
-$(TARGET): main.c
+.PHONY: clean
+
+$(TARGET): $(FNAME).c
 	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
